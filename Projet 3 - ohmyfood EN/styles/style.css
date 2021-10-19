@@ -1,0 +1,32 @@
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.explore {
+  background: #9356DC;
+  color: white;
+  border-radius: 25px 25px 0 0;
+  border: #FF79DA;
+}
+
+.search-box {
+  background-color: #faf0f0;
+}
+
+h1 {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.search-box button {
+  border: hidden;
+  overflow: hidden;
+}
+
+.search-box input {
+  border: hidden;
+}/*# sourceMappingURL=style.css.map */
