@@ -8,19 +8,37 @@ $light-color:lightgray;
 
 header{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
-}
-.explore {
-    background:$primary-color 
-
-color:$text-color;
-border-radius:25px 25px 0 0;
-border: $secondary-color;
+    
 }
 .search-box{
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    
+}
+.explore {
+    background:$primary-color ;
+direction: 56px;
+color:$text-color;
+border-radius:300px;
+border: $secondary-color;
+width: 200px;
+height: 200;
+padding: 10px;
+display: flex;
+flex-direction:column;
+align-items: center;
+}
+
+header img{
+max-width: 10rem; 
+}
+
+.search-box {
     background-color:$light-color;
-   
+   height: 256px;
 }
 h1{
     display: flex;
@@ -28,12 +46,57 @@ h1{
     flex-direction: column;
     justify-content: center;
 }
-.search-box button{
-    border: hidden;
-    overflow: hidden;
+
+
+
+li{
+    list-style: none;
+    background-color:$primary-color;
+    padding-left: 10px;
+    height: 20px;
+    width: 20px;
+    border-radius:50%;
 }
-.search-box input{
-    border: hidden;
+
+i{
+   font-size: 20px;
+   background-color: $light-color;
+   border-radius: 200px;
+   
+
+}
+
+.rest{
+    background:$light-color ;
+    height: 900px; 
+    padding: 2px;
+}
+
+.plate {
+    background-color: white;
+    margin: 12px;
+width: 355px;
+padding: 2px;
+    border-radius: 25px 25px 15px 15px;
+    display: flex;
+    flex-direction: column;
+    font-size: 7px;
+    object-fit: cover;
+    
+   
+}
+
+.plate img {
+    width: 354px;
+    height: 223px;
+    border-radius: 25px 25px 15px 15px;
+    object-fit: cover;
+    padding: 4px;
+}
+
+.plate p {
+    font-size: 20px;
+    margin: 2px;
 }
 
 
