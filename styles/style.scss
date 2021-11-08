@@ -2,26 +2,35 @@ $primary-color:#9356DC;
 $secondary-color:#FF79DA;
 $tertiary-color:#99E2D0;
 $text-color:white;
-$light-color:lightgray;
+$light-color:rgb(246,246,246);
 $font-fmaily: Roboto;
+
+
+ body{
+   position:relative;
+   top: 0;
+   bottom: 0;
+   right: 0;
+   left: 0;
+}
 
 
 header{
     display: flex;
     flex-direction: row;
     justify-content: center;
-    object-fit: cover;
+    
 }
 .search-box{
     display: flex;
     flex-direction:column;
     align-items: center;
-    object-fit: cover;
+    
     
 }
 .explore {
     background:$primary-color ;
-direction: 56px;
+direction: 50px;
 color:$text-color;
 border-radius:300px;
 border: $secondary-color;
@@ -31,30 +40,30 @@ padding: 10px;
 display: flex;
 flex-direction:column;
 align-items: center;
-object-fit: cover;
+
 }
 
 header img{
 max-width: 10rem; 
-object-fit: cover;
+
 }
 
 .search-box {
     background-color:$light-color;
-   height: 356px;
-   object-fit: cover;
+   height: 240px;
+   
 }
 h1{
     display: flex;
     align-items: flex-start;
     flex-direction: column;
     justify-content: center;
-    object-fit: cover;
+    
 }
 
 
 
-li{
+.circle{
     list-style: none;
     background-color:$primary-color;
     padding-left: 10px;
@@ -62,20 +71,21 @@ li{
     width: 20px;
     border-radius:50%;
     object-fit: cover;
+    position: relative;
+    left: -50px;
+    top: 20px;
 }
 
-i{
+.how {
    font-size: 20px;
    background-color: $light-color;
-   border-radius: 200px;
-   object-fit: cover;
+   margin: 50px;
+   padding: 50px;
+   
    
 
 }
 .choose i{
-    background-color: lightgray;
-    height: 70px;
-    width: 300px;
     align-items:flex-end;
 }
 
@@ -95,7 +105,7 @@ padding: 2px;
     display: flex;
     flex-direction: column;
     font-size: 7px;
-    object-fit: cover;
+    
     
    
 }
@@ -104,14 +114,14 @@ padding: 2px;
     width: 354px;
     height: 223px;
     border-radius: 25px 25px 15px 15px;
-    object-fit: cover;
+    
     padding: 4px;
 }
 
 .plate p {
     font-size: 20px;
     margin: 2px;
-    object-fit: cover;
+    
 }
 
 footer{
