@@ -3,10 +3,11 @@ $secondary-color:#FF79DA;
 $tertiary-color:#99E2D0;
 $text-color:white;
 $light-color:rgb(246,246,246);
-$font-fmaily: Roboto;
+
 
 
  body{
+    font-family: 'Roboto', sans-serif;
    position:relative;
    top: 0;
    bottom: 0;
@@ -16,12 +17,14 @@ $font-fmaily: Roboto;
 
 
 header{
+   
     display: flex;
     flex-direction: row;
     justify-content: center;
     
 }
 .search-box{
+    
     display: flex;
     flex-direction:column;
     align-items: center;
@@ -29,13 +32,14 @@ header{
     
 }
 .explore {
+   
     background:$primary-color ;
 direction: 50px;
 color:$text-color;
 border-radius:300px;
 border: $secondary-color;
 width: 200px;
-height: 200;
+
 padding: 10px;
 display: flex;
 flex-direction:column;
@@ -49,11 +53,17 @@ max-width: 10rem;
 }
 
 .search-box {
+   
     background-color:$light-color;
    height: 240px;
    
 }
+.search-box i{
+
+    
+}
 h1{
+    
     display: flex;
     align-items: flex-start;
     flex-direction: column;
@@ -64,24 +74,37 @@ h1{
 
 
 .circle{
+    
     list-style: none;
     background-color:$primary-color;
     padding-left: 10px;
-    height: 20px;
+    
+    height: 30px;
     width: 20px;
     border-radius:50%;
     object-fit: cover;
     position: relative;
-    left: -50px;
-    top: 20px;
+    left: -45px;
+    
+    display: flex;
+    align-items: center;
+    color: white;
 }
 
 .how {
-   font-size: 20px;
+    
+   font-size: 18px;
    background-color: $light-color;
    margin: 50px;
-   padding: 50px;
+   padding: 29px;
+   border-radius: 20px;
+   height: 30px;
+   width: 70%;
+   display: flex;
+   align-items: center;
+   box-shadow:5px 5px 10px lightgrey;
    
+
    
 
 }
@@ -98,8 +121,8 @@ h1{
 
 .plate {
     background-color: white;
-    margin: 12px;
-width: 355px;
+    margin: 10px;
+width: 100%;
 padding: 2px;
     border-radius: 25px 25px 15px 15px;
     display: flex;
@@ -111,10 +134,10 @@ padding: 2px;
 }
 
 .plate img {
-    width: 354px;
+    width: 100%;
     height: 223px;
     border-radius: 25px 25px 15px 15px;
-    
+    object-fit: cover;
     padding: 4px;
 }
 
