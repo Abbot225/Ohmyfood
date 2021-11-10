@@ -95,7 +95,7 @@ h1{
     
    font-size: 18px;
    background-color: $light-color;
-   margin: 50px;
+   margin: 2rem;
    padding: 29px;
    border-radius: 20px;
    height: 30px;
@@ -103,26 +103,33 @@ h1{
    display: flex;
    align-items: center;
    box-shadow:5px 5px 10px lightgrey;
-   
-
-   
-
+}
+.how i{
+    margin: 1.2rem;
+    color: #777;
 }
 .choose i{
     align-items:flex-end;
 }
 
 .rest{
+   
     background:$light-color ;
-    height: 988px; 
+    height: 100%; 
     padding: 2px;
     object-fit: cover;
+}
+.rest i{
+   font-size: 18px;
+   display: flex;
+   justify-content: space-between;
+align-items: center;
 }
 
 .plate {
     background-color: white;
     margin: 10px;
-width: 100%;
+box-shadow: 5px 5px 10px lightgrey;
 padding: 2px;
     border-radius: 25px 25px 15px 15px;
     display: flex;
@@ -145,12 +152,18 @@ padding: 2px;
     font-size: 20px;
     margin: 2px;
     
+    
 }
+
+.plate p:nth-child(1) {
+    font-weight: bold;
+  }
 
 footer{
 background-color: rgb(46, 45, 45);
 color: whitesmoke;
 padding: 10px;
+
 }
 
 footer ul{
