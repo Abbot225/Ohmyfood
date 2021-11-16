@@ -34,7 +34,7 @@ header{
 }
 .explore {
    
-    background:$primary-color ;
+    background:rgba(185, 47, 172, 0.767) ;
 direction: 50px;
 color:$text-color;
 border-radius:300px;
@@ -121,15 +121,43 @@ h1{
     object-fit: cover;
 }
 .som{
-    font-size: 20px;
+    font-size: 30px;
     margin: 2px;
     display:flex;
-}
-.som {
-    font-size: 16px;
-    display: flex;
     justify-content:space-between;
+    position: relative;
+    
+   
 }
+
+.som i {
+    color:black;
+    transition: ease-in 200ms;
+    
+    
+}
+
+.som i:hover{
+   color:$primary-color
+   
+    
+}
+
+
+
+.plate i{
+    position:absolute;
+    right: 0;
+}
+
+.heartback i{
+    color:rgba(31, 30, 30, 0);
+    stroke: none;
+}
+
+
+
+
 
 .plate {
     background-color: white;
@@ -184,6 +212,24 @@ h3{
     font-family: shrikhand;
 }
 
+/* MEDIA QUERIES*/
+
+@media only screen and (min-width: 768px){
+
+    h1{
+        display:flex;
+        flex-direction:row;
+    }
+    .how{
+        font-size:30px ;
+        width: 50%;
+        display: flex;
+        height: 100px;
+      
+        margin-left: 400px;
+    }
+    
+}
 
 
-
+    
