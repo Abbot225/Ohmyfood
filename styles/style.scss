@@ -236,29 +236,75 @@ animatinon:transitionIn 0.75s;
 }
 
 
+.mark-box:hover{
+    transform: scaleX(0);
+    transform-origin: left;
+    background-color: rgb(165, 81, 81);
+    transform: scaleX(1);
+    transform-origin:50%  right;
+    
+  display: block;
+  position: absolute;
+  top: 0; right: 0; bottom: 0; left: 0;
+  inset: 0 0 0 0;
+  
+ 
+  transition: transform 8.3s ease-in;
+}
 
 .mark-box:hover{
-    transform: scale(2.1);
-    transition: transform 3s;
-   
+    transform: scaleX(0);
+    transform-origin: left;
+    background-color: rgb(165, 81, 81);
+    transform: scaleX(1);
+    transform-origin:50%  right;
+    
+  display: block;
+  position: absolute;
+  top: 0; right: 0; bottom: 0; left: 0;
+  inset: 0 0 0 0;
+  
+  z-index: -1;
+ 
 }
 .mark-box{
+
     cursor:pointer;
     width: 50px;
     height: 50px;
-    position: relative;
-    display: flex;
+   padding-left: 36px;
+   padding-top: 10px;
    color: $tertiary-color;
-    
+   
 }
 
-.mark-box i{
-    width: 25px;
-    height: 25px;
-    background:rgba(169, 169, 169, 0.384);
+
+
+.green-box i{
+    width: 35px;
+    height: 35px;
+    background:white;
     box-sizing: border-box;
-    border-radius: 25px;
-   
+    border-radius: 45px;
+   color: $tertiary-color;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.green-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    background-color:$tertiary-color ;
+    transition: all 1.3s ease;
+    border-radius: 15px 0px 25px 0px;
+}
+
+.menu-item:hover .green-box{
+    width: 100px;
+    opacity: 1;
 }
 
 .container{
@@ -266,7 +312,9 @@ animatinon:transitionIn 0.75s;
     justify-content: space-between;
     
 }
-
+.space{
+    margin: 50px;
+}
 .dish{
     font-size: 22px;
 }
@@ -276,12 +324,12 @@ animatinon:transitionIn 0.75s;
     justify-content: space-between;
     position: relative;
     width: 100%;
-    flex-direction: column;
+    flex-direction: row;
     box-sizing: border-box;
     box-shadow: 5px 5px 10px lightgrey;
     border-radius: 15px 15px 25px 25px;
     display: flex;
-    padding: 2rem;
+    padding: 0;
    
     cursor:pointer;
 }
