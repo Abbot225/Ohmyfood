@@ -3,6 +3,7 @@ $secondary-color: #ff79da;
 $tertiary-color: #99e2d0;
 $text-color: white;
 $light-color: rgb(246, 246, 246);
+$hour-glass:rgba(37, 76, 204, 0.692);
 
 body {
     cursor: pointer;
@@ -12,7 +13,169 @@ body {
     bottom: 0;
     right: 0;
     left: 0;
+    animation: transitionIn 3.50s
 }
+
+.dark{
+    background-color: rgba(209, 202, 202, 0.397);
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.spin{
+    animation: dropin 4s forwards ,spinIn linear 1s infinite;
+    margin-left:88px ;
+    color:$hour-glass;
+    font-weight: 900;
+    font-size: 90px;
+    text-rendering: auto;
+   overflow:hidden;
+   top: -50px;
+    left: 50vw;
+    position: absolute;
+   
+}
+
+@keyframes spinIn {
+    from {
+        transform: rotate(-360deg);
+    }
+
+    to {
+       
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes dropin {
+    0% {
+        top: -50vh;
+         
+    }
+
+    25% {
+        top:50vh;
+        
+     }
+
+     90% {
+        opacity: 1;
+     }
+
+
+    100% {
+       top:50vh;
+       opacity: 0;
+    }
+}
+
+
+
+.dfirst img {
+    width: 100%;
+    height: 269px;
+}
+    
+    
+    
+   
+    
+        .search-box {
+            display: flex;
+            flex-direction: column;
+            background-color: $light-color;
+            padding: 100px;
+            width: 100%;
+            height: 650px;
+           
+            font-size: 50px;
+        }
+
+        h1 {
+            display: flex;
+            flex-direction: column;
+            font-size: 50px;
+        }
+    
+        h2{
+         
+            font-size: 50px;
+           
+        }
+    
+        .how {
+            font-size: 30px;
+            width: 36%;
+            display: flex;
+            height: 100px;
+    
+            margin-left: 488px;
+        }
+
+        .circle {
+            list-style: none;
+            background-color: $primary-color;
+            padding-left: 10px;
+        
+            height: 50px;
+            width: 40px;
+            border-radius: 50%;
+            object-fit: cover;
+            position: relative;
+            left: -45px;
+        
+            display: flex;
+            align-items: center;
+            color: white;
+        }
+    
+    
+    
+    
+    
+    .plate img{
+        width: 645px;
+        height: 180px;
+        border-radius: 25px 25px 1px 1px;
+        object-fit: cover;
+        padding: 4px;
+    }
+    
+    .plate{
+        background-color: white;
+        margin: 10px;
+        width: 650px;
+        height: 370px;
+        box-sizing: border-box;
+        box-shadow: 5px 5px 10px lightgrey;
+        border-radius: 25px 25px 15px 15px;
+        display: flex;
+        flex-direction: column;
+        font-size: 7px;
+    }
+    
+    .explore{
+        height: 40px;
+        
+    }
+    
+    
+    
+    footer{
+    width: 100%;
+    height: 100%;
+    }
+
+/* MEDIA QUERIES*/
+
+@media (min-width: 300px) and (max-width:500px) {
+   
+
+
+
+
 
 header {
     display: flex;
@@ -24,6 +187,13 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: $light-color;
+    margin: auto;
+    text-align: center;
+
+    height: 100%;
+    font-size: 20px;
+    padding: 10px;
 }
 
 .explore {
@@ -32,7 +202,7 @@ header {
     color: $text-color;
     border-radius: 300px;
     border: $secondary-color;
-    width: 200px;
+    width: 300px;
 
     padding: 10px;
     display: flex;
@@ -40,21 +210,16 @@ header {
     align-items: center;
 }
 
-header img {
-    max-width: 10rem;
-}
 
-.search-box {
-    background-color: $light-color;
-    height: 240px;
-}
-.search-box i {
-}
+
+
 h1 {
+    font-weight: bold;
     display: flex;
     align-items: flex-start;
     flex-direction: column;
     justify-content: center;
+    font-size: 25px;
 }
 
 .circle {
@@ -99,6 +264,7 @@ h1 {
     height: 100%;
     padding: 2px;
     object-fit: cover;
+   
 }
 .som {
     font-size: 30px;
@@ -140,9 +306,15 @@ h1 {
     font-size: 7px;
 }
 
-.aplate img {
-    width: 345px;
-    height: 180px;
+.aplate {
+    background-color: #eee;
+    border-radius: 10%  10%  1% 1% ; 
+    margin-bottom: 900px;
+}
+
+.dfirst img {
+    width: 100%;
+    padding: 50%;
     border-radius: 25px 25px 1px 1px;
     object-fit: cover;
     padding: 4px;
@@ -169,35 +341,30 @@ footer {
     background-color: rgb(46, 45, 45);
     color: whitesmoke;
     padding: 10px;
+    font-size: 30px;
+    font-family: "Roboto",sans-serif;
+    
 }
 
 footer ul {
     color: whitesmoke;
+    font-size: 30px;
+    list-style-type: none;
 }
 
 h3 {
     font-family: shrikhand;
 }
 
-.search-box {
-    animatinon: transitionIn 0.75s;
+.fade-in{
+    animation: transitionIn 0.75s ;
 }
-@keyframes transitionIn {
-    from {
-        opacity: 0;
-        tranform: rotateX(-10deg);
-    }
 
-    to {
-        opacity: 1;
-        tranform: rotateX(-10deg);
-    }
-}
 
 .green-box i {
     width: 35px;
     height: 35px;
-    
+
     background: white;
     box-sizing: border-box;
     border-radius: 45px;
@@ -215,19 +382,32 @@ h3 {
     width: 0;
     background-color: $tertiary-color;
     transition: all 1.3s ease;
-    border-radius: 15px 0px 25px 0px;
+    transform: translateX(10px);
 }
 
 
+.details{
+text-overflow: ellipsis;
+font-size: 40px;
+white-space: nowrap;
+  
+  overflow: hidden;
+}
+.container{
+    max-width: 100%;
+    transition:all 0.5s;
+}
+.menu-item:hover .container{
+    max-width: 50%;
+    transition:all 0.5s;
+}
 .menu-item:hover .green-box {
     width: 100px;
-    
 }
 
 .menu-item:hover .green-box i {
     transform: rotate(5deg);
     transition: all 1.3s ease-in-out;
-    
 }
 
 .container {
@@ -240,38 +420,21 @@ h3 {
 .dish {
     font-size: 22px;
 }
+
 .menu-item {
     font-size: 18px;
-    margin: auto;
+    margin: 10px;
     justify-content: space-between;
     position: relative;
-    width: 100%;
+    overflow: hidden;
     flex-direction: row;
     box-sizing: border-box;
-    box-shadow: 5px 5px 10px lightgrey;
+    box-shadow: 5px 5px 10px #777;
     border-radius: 15px 15px 25px 25px;
     display: flex;
     padding: 0;
-
+    background-color: white;
     cursor: pointer;
 }
 
-.fa-arrow {
-    color: black;
-}
-/* MEDIA QUERIES*/
-
-@media only screen and (min-width: 768px) {
-    h1 {
-        display: flex;
-        flex-direction: row;
-    }
-    .how {
-        font-size: 30px;
-        width: 50%;
-        display: flex;
-        height: 100px;
-
-        margin-left: 400px;
-    }
 }
