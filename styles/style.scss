@@ -3,7 +3,7 @@ $secondary-color: #ff79da;
 $tertiary-color: #99e2d0;
 $text-color: white;
 $light-color: rgb(246, 246, 246);
-$hour-glass:rgba(37, 76, 204, 0.692);
+$hour-glass: rgba(37, 76, 204, 0.692);
 
 body {
     cursor: pointer;
@@ -13,29 +13,39 @@ body {
     bottom: 0;
     right: 0;
     left: 0;
-    animation: transitionIn 3.50s
+    animation: transitionIn 3.5s;
 }
 
-.dark{
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.aplate img {
+    height: 700px;
+    width: 700px;
+}
+
+.dark {
     background-color: rgba(209, 202, 202, 0.397);
-    width: 400px;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.spin{
-    animation: dropin 4s forwards ,spinIn linear 1s infinite;
-    margin-left:88px ;
-    color:$hour-glass;
+.spin {
+    animation: dropin 4s forwards, spinIn linear 1s infinite;
+    margin-left: 88px;
+    color: $hour-glass;
     font-weight: 900;
     font-size: 90px;
     text-rendering: auto;
-   overflow:hidden;
-   top: -50px;
+    overflow: hidden;
+    top: -50px;
     left: 50vw;
     position: absolute;
-   
 }
 
 @keyframes spinIn {
@@ -44,7 +54,6 @@ body {
     }
 
     to {
-       
         transform: rotate(360deg);
     }
 }
@@ -52,135 +61,20 @@ body {
 @keyframes dropin {
     0% {
         top: -50vh;
-         
     }
 
     25% {
-        top:50vh;
-        
-     }
+        top: 50vh;
+    }
 
-     90% {
+    90% {
         opacity: 1;
-     }
-
+    }
 
     100% {
-       top:50vh;
-       opacity: 0;
+        top: 50vh;
+        opacity: 0;
     }
-}
-
-
-
-.dfirst img {
-    width: 100%;
-    height: 269px;
-}
-    
-    
-    
-   
-    
-        .search-box {
-            display: flex;
-            flex-direction: column;
-            background-color: $light-color;
-            padding: 100px;
-            width: 100%;
-            height: 650px;
-           
-            font-size: 50px;
-        }
-
-        h1 {
-            display: flex;
-            flex-direction: column;
-            font-size: 50px;
-        }
-    
-        h2{
-         
-            font-size: 50px;
-           
-        }
-    
-        .how {
-            font-size: 30px;
-            width: 36%;
-            display: flex;
-            height: 100px;
-    
-            margin-left: 488px;
-        }
-
-        .circle {
-            list-style: none;
-            background-color: $primary-color;
-            padding-left: 10px;
-        
-            height: 50px;
-            width: 40px;
-            border-radius: 50%;
-            object-fit: cover;
-            position: relative;
-            left: -45px;
-        
-            display: flex;
-            align-items: center;
-            color: white;
-        }
-    
-    
-    
-    
-    
-    .plate img{
-        width: 645px;
-        height: 180px;
-        border-radius: 25px 25px 1px 1px;
-        object-fit: cover;
-        padding: 4px;
-    }
-    
-    .plate{
-        background-color: white;
-        margin: 10px;
-        width: 650px;
-        height: 370px;
-        box-sizing: border-box;
-        box-shadow: 5px 5px 10px lightgrey;
-        border-radius: 25px 25px 15px 15px;
-        display: flex;
-        flex-direction: column;
-        font-size: 7px;
-    }
-    
-    .explore{
-        height: 40px;
-        
-    }
-    
-    
-    
-    footer{
-    width: 100%;
-    height: 100%;
-    }
-
-/* MEDIA QUERIES*/
-
-@media (min-width: 300px) and (max-width:500px) {
-   
-
-
-
-
-
-header {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
 }
 
 .search-box {
@@ -188,12 +82,9 @@ header {
     flex-direction: column;
     align-items: center;
     background-color: $light-color;
-    margin: auto;
-    text-align: center;
-
-    height: 100%;
-    font-size: 20px;
-    padding: 10px;
+    font-size: 50px;
+    height: 650px;
+    width: -60px;
 }
 
 .explore {
@@ -202,24 +93,43 @@ header {
     color: $text-color;
     border-radius: 300px;
     border: $secondary-color;
-    width: 300px;
-
-    padding: 10px;
+    width: 700px;
+    padding: 50px;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-
-
-
 h1 {
-    font-weight: bold;
     display: flex;
-    align-items: flex-start;
     flex-direction: column;
+    font-size: 50px;
+}
+
+h2 {
+    display: flex;
+    font-size: 50px;
+    align-content: center;
+    
     justify-content: center;
-    font-size: 25px;
+}
+
+.how {
+    font-size: 30px;
+    width: 30%;
+    padding: 30px;
+    display: flex;
+   border-radius: 40px;
+background-color:$light-color;
+    align-items: center;
+    margin-left: 36%;
+    margin-bottom: 50px;
+   
+}
+
+.how i{
+    margin: 7px;
+    color: #777;
 }
 
 .circle {
@@ -227,8 +137,8 @@ h1 {
     background-color: $primary-color;
     padding-left: 10px;
 
-    height: 30px;
-    width: 20px;
+    height: 50px;
+    width: 40px;
     border-radius: 50%;
     object-fit: cover;
     position: relative;
@@ -239,65 +149,21 @@ h1 {
     color: white;
 }
 
-.how {
-    font-size: 18px;
-    background-color: $light-color;
-    margin: 2rem;
-    padding: 29px;
-    border-radius: 20px;
-    height: 30px;
-    width: 70%;
-    display: flex;
-    align-items: center;
-    box-shadow: 5px 5px 10px lightgrey;
-}
-.how i {
-    margin: 1.2rem;
-    color: #777;
-}
-.choose i {
-    align-items: flex-end;
-}
-
-.rest {
-    background: $light-color;
-    height: 100%;
-    padding: 2px;
+.plate img {
+    width: 645px;
+    height: 180px;
+    border-radius: 25px 25px 1px 1px;
     object-fit: cover;
-   
-}
-.som {
-    font-size: 30px;
-    margin: 2px;
-    display: flex;
-    justify-content: space-between;
-    position: relative;
-}
-
-.som i {
-    color: black;
-    transition: ease-in 200ms;
-}
-
-.som i:hover {
-    color: $primary-color;
-}
-
-.plate i {
-    position: absolute;
-    right: 0;
-}
-
-.heartback i {
-    color: rgba(31, 30, 30, 0);
-    stroke: none;
+    padding: 4px;
 }
 
 .plate {
     background-color: white;
     margin: 10px;
-    width: 349px;
-    height: 270px;
+    margin-left: 700px;
+    margin-top: 40px;
+    width: 650px;
+    height: 370px;
     box-sizing: border-box;
     box-shadow: 5px 5px 10px lightgrey;
     border-radius: 25px 25px 15px 15px;
@@ -306,135 +172,326 @@ h1 {
     font-size: 7px;
 }
 
-.aplate {
-    background-color: #eee;
-    border-radius: 10%  10%  1% 1% ; 
-    margin-bottom: 900px;
+.som{
+    font-size: 30px;
 }
 
-.dfirst img {
-    width: 100%;
-    padding: 50%;
-    border-radius: 25px 25px 1px 1px;
-    object-fit: cover;
-    padding: 4px;
+.plate p{
+    font-size: 30px;
+    margin: 1px;
 }
 
-.plate img {
-    width: 345px;
-    height: 180px;
-    border-radius: 25px 25px 1px 1px;
-    object-fit: cover;
-    padding: 4px;
-}
 
-.plate p {
-    font-size: 20px;
-    margin: 2px;
-}
-
-.plate p:nth-child(1) {
-    font-weight: bold;
+.explore {
+    height: 40px;
 }
 
 footer {
-    background-color: rgb(46, 45, 45);
-    color: whitesmoke;
+    background-color: #2e2d2d;
+    color: #f5f5f5;
     padding: 10px;
-    font-size: 30px;
+    font-size: 70px;
     font-family: "Roboto",sans-serif;
     
+   
 }
 
-footer ul {
-    color: whitesmoke;
-    font-size: 30px;
+footer ul{
     list-style-type: none;
+    margin: 7.5;
 }
 
-h3 {
-    font-family: shrikhand;
-}
+/* MEDIA QUERIES*/
 
-.fade-in{
-    animation: transitionIn 0.75s ;
-}
+@media (max-width: 500px) {
+    .heart {
+        font-size: 30px;
+        display: flex;
+        padding: 30px;
+        justify-content: space-between;
+    }
 
+    
 
-.green-box i {
-    width: 35px;
-    height: 35px;
+    .dark {
+        ackground-color: rgba(209, 202, 202, 0.397);
+        width: 400px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 
-    background: white;
-    box-sizing: border-box;
-    border-radius: 45px;
-    color: $tertiary-color;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transform: rotate(-90deg);
-}
+    .search-box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: $light-color;
+        margin: auto;
+        text-align: center;
 
-.green-box {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 0;
-    background-color: $tertiary-color;
-    transition: all 1.3s ease;
-    transform: translateX(10px);
-}
+        height: 100%;
+        font-size: 20px;
+        padding: 10px;
+    }
 
+    .explore {
+        background: rgba(185, 47, 172, 0.767);
+        direction: 50px;
+        color: $text-color;
+        border-radius: 300px;
+        border: $secondary-color;
+        width: 300px;
 
-.details{
-text-overflow: ellipsis;
-font-size: 40px;
-white-space: nowrap;
-  
-  overflow: hidden;
-}
-.container{
-    max-width: 100%;
-    transition:all 0.5s;
-}
-.menu-item:hover .container{
-    max-width: 50%;
-    transition:all 0.5s;
-}
-.menu-item:hover .green-box {
-    width: 100px;
-}
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 
-.menu-item:hover .green-box i {
-    transform: rotate(5deg);
-    transition: all 1.3s ease-in-out;
-}
+    h1 {
+        font-weight: bold;
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        justify-content: center;
+        font-size: 30px;
+    }
 
-.container {
-    display: flex;
-    justify-content: space-between;
-}
-.space {
-    margin: 50px;
-}
-.dish {
-    font-size: 22px;
-}
+    .circle {
+        list-style: none;
+        background-color: $primary-color;
+        padding-left: 10px;
 
-.menu-item {
-    font-size: 18px;
-    margin: 10px;
-    justify-content: space-between;
-    position: relative;
-    overflow: hidden;
-    flex-direction: row;
-    box-sizing: border-box;
-    box-shadow: 5px 5px 10px #777;
-    border-radius: 15px 15px 25px 25px;
-    display: flex;
-    padding: 0;
-    background-color: white;
-    cursor: pointer;
-}
+        height: 30px;
+        width: 20px;
+        border-radius: 50%;
+        object-fit: cover;
+        position: relative;
+        left: -45px;
 
+        display: flex;
+        align-items: center;
+        color: white;
+    }
+
+    .how {
+        font-size: 18px;
+        background-color: $light-color;
+        margin: 2rem;
+        padding: 29px;
+        border-radius: 20px;
+        height: 30px;
+        width: 70%;
+        display: flex;
+        align-items: center;
+        box-shadow: 5px 5px 10px lightgrey;
+    }
+    .how i {
+        margin: 1.2rem;
+        color: #777;
+    }
+    .choose i {
+        align-items: flex-end;
+    }
+
+    .rest {
+        background: $light-color;
+        height: 100%;
+        padding: 2px;
+        object-fit: cover;
+    }
+    .som {
+        font-size: 30px;
+        margin: 2px;
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+    }
+
+    .som i {
+        color: black;
+        transition: ease-in 200ms;
+    }
+
+    .som i:hover {
+        color: $primary-color;
+    }
+
+    .plate i {
+        position: absolute;
+        right: 0;
+    }
+
+    .heartback i {
+        color: rgba(31, 30, 30, 0);
+        stroke: none;
+    }
+
+    .plate {
+        background-color: white;
+        margin: 10px;
+        width: 349px;
+        height: 270px;
+        box-sizing: border-box;
+        box-shadow: 5px 5px 10px lightgrey;
+        border-radius: 25px 25px 15px 15px;
+        display: flex;
+        flex-direction: column;
+        font-size: 7px;
+    }
+
+    .aplate {
+        background-color: #eee;
+        position: relative;
+        bottom: 170px;
+
+        border-radius: 45px 45px;
+        width: 400px;
+    }
+
+    .ap {
+        background-color: #eee;
+        position: relative;
+        bottom: 50px;
+
+        border-radius: 45px 45px;
+        width: 400px;
+    }
+
+    .firstplate img {
+        width: 400px;
+    }
+
+    .first img {
+        width: 400px;
+    }
+
+    .plate img {
+        width: 345px;
+        height: 180px;
+        border-radius: 25px 25px 1px 1px;
+        object-fit: cover;
+        padding: 4px;
+    }
+
+    .plate p {
+        font-size: 20px;
+        margin: 2px;
+    }
+
+    .plate p:nth-child(1) {
+        font-weight: bold;
+    }
+
+    footer {
+        background-color: rgb(46, 45, 45);
+        color: whitesmoke;
+        padding: 10px;
+        font-size: 30px;
+        font-family: "Roboto", sans-serif;
+        width: 370px;
+    }
+
+    footer ul {
+        color: whitesmoke;
+        font-size: 30px;
+       
+    }
+
+    h3 {
+        font-family: shrikhand;
+    }
+
+    .fade-in {
+        animation: transitionIn 0.75s;
+    }
+
+    .green-box i {
+        width: 35px;
+        height: 35px;
+        background: white;
+        box-sizing: border-box;
+        border-radius: 45px;
+        color: $tertiary-color;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transform: rotate(-90deg);
+    }
+
+    .green-box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 0;
+
+        background-color: $tertiary-color;
+        transition: all 1.3s ease;
+        transform: translateX(10px);
+    }
+
+    .details {
+        text-overflow: ellipsis;
+        font-size: 15px;
+        white-space: nowrap;
+
+        overflow: hidden;
+    }
+    .container {
+        max-width: 100%;
+        transition: all 0.5s;
+    }
+    .menu-item:hover .container {
+        max-width: 50%;
+        transition: all 0.5s;
+    }
+    .menu-item:hover .green-box {
+        width: 100px;
+        height: 88px;
+    }
+
+    .menu-item:hover .green-box i {
+        transform: rotate(5deg);
+        transition: all 1.3s ease-in-out;
+    }
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+    }
+    .space {
+        margin: 10px;
+    }
+    .dish {
+        font-size: 22px;
+    }
+
+    .menu-item {
+        font-size: 18px;
+        margin: 20px;
+        height: 90px;
+        justify-content: space-between;
+        position: relative;
+        overflow: hidden;
+        flex-direction: row;
+        box-sizing: border-box;
+        box-shadow: 5px 5px 10px #777;
+        border-radius: 25px 35px 25px 35px;
+        display: flex;
+        padding-bottom: 60px;
+        background-color: white;
+        cursor: pointer;
+    }
+
+    .order {
+        background: $primary-color;
+        border: $secondary-color;
+        border-radius: 300px;
+        color: #fff;
+        width: 200px;
+        padding: 30px;
+        margin: 65px;
+        display: inline-block;
+        text-align: center;
+    }
 }
