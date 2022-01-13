@@ -18,7 +18,6 @@ body {
 
 a {
     text-decoration: none;
-    font-style: bold;
     color: black;
 }
 
@@ -222,7 +221,6 @@ h2 {
 }
 
 h1 {
-    font-weight: bold;
     display: flex;
     align-items: flex-start;
     flex-direction: column;
@@ -358,7 +356,7 @@ h1 {
 }
 
 .plate p:nth-child(1) {
-    font-weight: bold;
+    
 }
 
 footer {
