@@ -35,6 +35,7 @@ header {
 .aplate img {
     height: 700px;
     width: 700px;
+    object-fit: cover;
 }
 
 .dark {
@@ -173,7 +174,7 @@ h2 {
 .firstplate img {
     width: 100%;
     height: 40vh;
-    
+    object-fit: cover;
 }
 
 .heart {
@@ -315,6 +316,7 @@ h1 {
     height: 180px;
     border-radius: 25px 25px 1px 1px;
     padding: 4px;
+    object-fit: cover;
 }
 
 .plate p {
