@@ -313,7 +313,7 @@ h1 {
 
 .som i::before {
     transition: ease-in 500ms;
-    transform-style: scale(1.4);
+    transform: scale(1.4);
 }
 
 .som i:hover {
