@@ -56,6 +56,13 @@ header {
     justify-content: center;
 }
 
+header i {
+    position: relative;
+    right: 55px;
+    top:30px;
+    display: flex;
+}
+
 .aplate img {
     height: 700px;
     width: 700px;
@@ -226,9 +233,8 @@ h2 {
 
 .select i {
     margin-top: -35px;
-    left: 800px;
     position: relative;
-    left: 420px;
+    left: 340px;
 }
 
 .select {
