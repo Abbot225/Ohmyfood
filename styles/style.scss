@@ -28,7 +28,7 @@ a {
     object-fit: cover;
     position: relative;
     bottom: 205px;
-    left: 100px;
+    left: 268px;
     width: 77px;
     height: 29px;
     font-size: 14px;
@@ -36,9 +36,9 @@ a {
     background-color: $tertiary-color;
 }
 
-.explore:hover,
 .how:hover {
     background: rgba(231, 184, 253, 0.452);
+    
 }
 
 .how i:hover {
@@ -136,32 +136,37 @@ header {
 h1 {
     display: flex;
     flex-direction: column;
-    font-size: 50px;
+    font-size: 30px;
     font-family: "Shrikhand", cursive;
 }
 
 h2 {
     display: flex;
-    font-size: 50px;
+    font-size: 30px;
     align-content: center;
     font-family: "Shrikhand", cursive;
     justify-content: center;
 }
 
 .how {
+    font-weight: bold;
     font-size: 30px;
-    width: 30%;
     padding: 30px;
     display: flex;
-    border-radius: 40px;
-    background-color: $light-color;
+    border-radius: 20px;
     align-items: center;
     margin-left: 36%;
     margin-bottom: 50px;
+    font-size: 18px;
+    background-color: $light-color;
+    margin: 2rem;
+    height: 18px;
+    width: 270px;
+    box-shadow: 5px 5px 10px lightgrey;
 }
 
 .how i {
-    margin: 7px;
+    margin: 1.2rem;
     color: #777;
 }
 
@@ -178,11 +183,6 @@ h2 {
     display: flex;
     align-items: center;
     color: $text-color;
-}
-
-.som {
-    font-size: 30px;
-    font-family: "Roboto", sans-serif;
 }
 
 .plate p {
@@ -209,21 +209,32 @@ h2 {
     font-size: 30px;
 }
 
-.non {
-    color: brown;
+.select i::before {
+    transition: ease-in 500ms;
+    transform: scale(1.4);
 }
 
+.select i:hover {
+    color: $primary-color;
+    transition: ease-in 500ms;
+    transform: scale(1.6);
+    background-color: rgba(255, 255, 255, 0);
+}
 .choose {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
+    margin: 20px;
 }
 
-.choose i {
-    font-size: 30px;
+.select i {
+    margin-top: -35px;
+    left: 800px;
+    position: relative;
+    left: 420px;
+}
+
+.select {
     display: flex;
-    margin-left: 788px;
+    justify-content: space-between;
+    position: relative;
 }
 
 .search-box {
@@ -274,22 +285,6 @@ h1 {
     color: $text-color;
 }
 
-.how {
-    font-size: 18px;
-    background-color: $light-color;
-    margin: 2rem;
-    padding: 29px;
-    border-radius: 20px;
-    height: 30px;
-    width: 70%;
-    display: flex;
-    align-items: center;
-    box-shadow: 5px 5px 10px lightgrey;
-}
-.how i {
-    margin: 1.2rem;
-    color: #777;
-}
 
 .rest {
     background: $light-color;
@@ -297,11 +292,13 @@ h1 {
     padding: 2px;
 }
 .som {
+    font-weight: bold;
     font-size: 30px;
     margin: 2px;
     display: flex;
     justify-content: space-between;
     position: relative;
+    font-family: "Roboto", sans-serif;
 }
 
 .som i {
@@ -320,8 +317,11 @@ h1 {
     color: $primary-color;
     transition: ease-in 500ms;
     transform: scale(1.6);
-    color: $secondary-color;
     background-color: rgba(255, 255, 255, 0);
+}
+
+.som i:active {
+    color: $primary-color;
 }
 
 .plate i {
@@ -368,8 +368,6 @@ h1 {
     margin: 2px;
 }
 
-.plate p:nth-child(1) {
-}
 
 footer {
     background-color: rgb(46, 45, 45);
@@ -486,8 +484,7 @@ h3 {
     font-size: 30px;
 }
 
-.price {
-}
+
 
 /* MEDIA QUERIES*/
 
