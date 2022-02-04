@@ -21,6 +21,9 @@ a {
     color: black;
 }
 
+
+
+
 .line{
 border-bottom: solid $tertiary-color 4px;
 width: 35px;
@@ -61,7 +64,11 @@ header {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    object-fit:scale-down;
+    
 }
+
+
 
 header i {
     position: relative;
@@ -89,12 +96,16 @@ header i {
     margin-left: 88px;
     color: $hour-glass;
     font-weight: 900;
-    font-size: 90px;
+    font-size: 200px;
     text-rendering: auto;
     overflow: hidden;
     top: -50px;
-    left: 50vw;
+    left: 45vw;
     position: absolute;
+}
+
+.fade{
+    animation: transitionin 2s;
 }
 
 @keyframes spinIn {
@@ -109,11 +120,11 @@ header i {
 
 @keyframes dropin {
     0% {
-        top: -50vh;
+        top: -9vh;
     }
 
     25% {
-        top: 50vh;
+        top: 9vh;
     }
 
     90% {
@@ -121,8 +132,20 @@ header i {
     }
 
     100% {
-        top: 50vh;
+        top: 9vh;
         opacity: 0;
+    }
+}
+
+@keyframes transitionin{
+    from {
+        opacity:0;
+        transform: rotateX(-10deg);
+    }
+
+    to {
+        opacity:1;
+        transform: rotateX(0);
     }
 }
 
@@ -169,11 +192,11 @@ h2 {
     border-radius: 20px;
     align-items: center;
     margin-bottom: 50px;
-    font-size: 18px;
+    font-size: 14px;
     background-color: $light-color;
     margin: 2rem;
     height: 18px;
-    width: 100%;
+    width: 77%;
     box-shadow: 5px 5px 10px lightgrey;
 }
 
@@ -220,7 +243,7 @@ h2 {
     background-color: rgba(255, 255, 255, 0);
 }
 .choose {
-    margin: 20px;
+    margin: 2rem;
 }
 
 .select i {
@@ -359,7 +382,7 @@ h1 {
 }
 
 .plate img {
-    width: 100%;
+    width: 99%;
     height: 180px;
     border-radius: 25px 25px 1px 1px;
     padding: 4px;
