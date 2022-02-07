@@ -60,14 +60,14 @@ bottom: 10px;
     margin: auto;
 }
 
-.container{
+.contain{
 display: flex;
 justify-content:center ;
 object-fit: inherit;
 height: 50px;
 }
 
-.container i{
+.contain i{
     margin-top: 20px;
     margin-right: 50px;
 }
@@ -452,6 +452,7 @@ h3 {
 .details {
     text-overflow: ellipsis;
     font-size: 15px;
+    padding: 1rem;
     white-space: nowrap;
 
     overflow: hidden;
