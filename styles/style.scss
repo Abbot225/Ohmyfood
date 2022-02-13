@@ -99,8 +99,7 @@ header {
 }
 
 .spin {
-    animation: dropin 7s forwards, spinIn linear 2s infinite;
-    margin-left: 88px;
+    animation: dropin 7s forwards, spinIn linear 3s infinite;
     color: $hour-glass;
     font-weight: 900;
     font-size: 200px;
@@ -108,7 +107,8 @@ header {
     overflow: hidden;
     top: -50px;
     left: 45vw;
-    position: absolute;
+    position: fixed;
+    z-index: 999;
 }
 
 .fade{
@@ -443,6 +443,7 @@ h3 {
     justify-content: center;
     align-items: center;
     width: 0;
+    height: 88px;
 
     background-color: $tertiary-color;
     transition: all 1.3s ease;
@@ -462,12 +463,12 @@ h3 {
     transition: all 0.5s;
 }
 .menu-item:hover .container {
-    max-width: 50%;
+    max-width: 75%;
     transition: all 0.5s;
 }
 .menu-item:hover .green-box {
     width: 100px;
-    height: 88px;
+    
 }
 
 .menu-item:hover .green-box i {
@@ -520,7 +521,6 @@ h3 {
 
 
 
-/* MEDIA QUERIES*/
 
-@media (max-width: 500px) {
-}
+
+
