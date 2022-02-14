@@ -109,7 +109,7 @@ header {
 
 .dark i{
     position: relative;
-    right: 30%;
+    right: 35%;
     bottom:25px;
 }
 
@@ -574,9 +574,10 @@ h3 {
 
 /* MEDIA QUERIES*/
 
-@media (min-width: 500px) {
+@media (min-width: 400px) and (max-width:2999px){
 
 .dark i{
-    right: 2%;
+right: 14%;
 }
+
 }
